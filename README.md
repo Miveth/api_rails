@@ -1,13 +1,12 @@
 # README
 
-Example to product catalog with option the shopping cart option, for this example try to buil the application in react, ruby and rails 
+Example to product catalog with the shopping cart option, for this example try to build the application in react Frontend and ruby and rails backend
 
 # Versions
 * Rails version 6.1.6
 * Ruby version '2.7.6'
-
-# System dependencies
-* OS Windows 10 
+### OS
+* Windows 10 
 
 # Configuration
 * rails new api_rails --api -d mysql
@@ -17,18 +16,16 @@ Example to product catalog with option the shopping cart option, for this exampl
 * Add Annotate by model's description in the Gemfile
     - gem 'annotate'
 
-### modelos
+### Modelos
 * Productos:
-    - 1rails g scaffold Product name:string description:string img_url:string stock:integer 'price:decimal{10,2}'
+    - rails g scaffold Product name:string description:string img_url:string stock:integer 'price:decimal{10,2}'
+* User:
+    - rails g model User username:string email:string password_digest:text token:text
+
 # Database creation
 * mysql
 
 
-
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
